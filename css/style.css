@@ -32,6 +32,6 @@ hr {
 }
 
 .container-introducao {
-    --margem: 10%;
+    --margem: 20%;
     margin: 30px var(--margem) 30px var(--margem);
 }
