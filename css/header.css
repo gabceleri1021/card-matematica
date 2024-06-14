@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    padding: 5px;
+}
+
+.menu div {
+    color: var(--branco);
+}
+
+.titulo {
+    width: 200px;
+    height: 100%;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+
+    border-radius: px;
+}

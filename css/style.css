@@ -1,0 +1,37 @@
+@import url("./cards.css");
+@import url("./header.css");
+
+:root {
+    --azul-preto: #091D34;
+    --azul-escuro: #133863;
+    --azul-normal: #236AB9;
+    --azul-claro: #609CE1;
+    --branco: #E1ECF9;
+    --cor-sombra: rgba(20, 20, 20, 0.552);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    color: var(--azul-preto)
+}
+
+body {
+    background-color: var(--branco);
+}
+
+main {
+    padding: 10px;
+}
+
+hr {
+    border: 1px solid var(--azul-claro);
+    margin: 20px 0px 20px 0px;
+}
+
+.container-introducao {
+    --margem: 10%;
+    margin: 30px var(--margem) 30px var(--margem);
+}
