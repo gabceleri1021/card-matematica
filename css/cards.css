@@ -5,15 +5,15 @@
 
     background: linear-gradient(180deg, rgba(225,236,249,1) 0%, rgba(225,236,249,1) 98%, rgba(96,156,225,1) 98.0001%, rgba(96,156,225,1) 100%);
     background-size: 50px 50px;
-    animation: linear 10s infinite fundomovendo;
+    animation: linear 30s infinite fundomovendo;
 }
 
 @keyframes fundomovendo {
     from {
-        background-position: 0% 0%;
+        background-position: 0px 0px;
     }
     to {
-       background-position: 0% 100%; 
+       background-position: 0px 1000px; 
     }
 }
 
