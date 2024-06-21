@@ -24,6 +24,7 @@ body {
 
 main {
     padding: 10px 5% 10px 5%;
+    margin-bottom: 50px;
 }
 
 hr {
@@ -32,8 +33,9 @@ hr {
 }
 
 .container-introducao {
-    --margem: 20%;
-    margin: 30px var(--margem) 30px var(--margem);
+    --margem: 15%;
+    margin: 60px var(--margem) 60px var(--margem);
+    text-align: center;
 }
 
 .abas {
@@ -41,23 +43,27 @@ hr {
 }
 
 .seletor-abas {
-    height: 40px;
+    height: 60px;
     width: 100%;
-
+    gap: 20px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border-bottom: 2px solid var(--azul-escuro);
 }
 
 .seletor-btn {
     height: 100%;
-    width: 100px;
+    width: max-content;
     background-color: var(--branco);
     color: var(--azul-preto);
     border-width: 0px;
     font-weight: 600;
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
 
     transition: 100ms linear;
     position: relative;
@@ -77,10 +83,11 @@ hr {
     z-index: -1;
     bottom: 0px;
     transition: 100ms linear;
+    border-radius: 3px 3px 0px 0px;
 }
 
 .seletor-btn-ativo {
-    color: var(--azul-normal);
+    color: var(--azul-claro);
 }
 
 .seletor-btn-ativo::after {
@@ -100,4 +107,94 @@ hr {
 
 .aba-selecionada {
     display: var(--display);
+}
+
+.container-explicacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(225,236,249,1) 0%, rgba(225,236,249,1) 98%, rgba(96,156,225,1) 98.0001%, rgba(96,156,225,1) 100%);
+    background-size: 50px 50px;
+    animation: linear 30s infinite fundomovendo;
+}
+
+.container-funcao {
+    border-radius: 10px;
+    height: auto;
+    flex: 1 1 400px;
+    background-color: var(--azul-normal);
+    box-shadow: 0px 2px 5px var(--cor-sombra);
+    padding: 40px;
+}
+
+.container-funcao-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.exemplo-triangulo {
+    margin-top: 10px;
+    width: 80%;
+    border: 5px solid var(--azul-escuro);
+}
+
+.cateto-oposto {
+    font-weight: 700;
+    color: #8C52FF;
+    background-color: var(--azul-preto);
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.cateto-adjacente {
+    font-weight: 700;
+    color: #FF66C4;
+    background-color: var(--azul-preto);
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.hipotenusa {
+    font-weight: 700;
+    color: #5CE1E6;
+    background-color: var(--azul-preto);
+    border-radius: 3px;
+    padding: 1px;
+}
+
+footer {
+    height: auto;
+    padding: 30px;
+    background-color: var(--azul-preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.integrante {
+    color: var(--azul-escuro);
+    font-weight: 500;
+    list-style: none;
+    padding: 0px 4px 0px 4px;
+    
+}
+
+.divisoria {
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--azul-escuro);
+    margin: 0px 4px 0px 4px;
+    height: 20px;
 }

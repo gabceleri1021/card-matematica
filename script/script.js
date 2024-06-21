@@ -5,26 +5,24 @@ const abaCards = {
     btn: document.getElementById('btn-cards'),
     aba: document.getElementById('aba-cards'),
 }
-const abaSobre = {
-    btn: document.getElementById('btn-sobre'),
-    aba: document.getElementById('aba-sobre')
+const abaExplicacao = {
+    btn: document.getElementById('btn-explicacao'),
+    aba: document.getElementById('aba-explicacao')
 }
 
 //Adicionar abas no vetor para serem utilizados
 abas.push(abaCards)
-abas.push(abaSobre)
+abas.push(abaExplicacao)
 
 function ativarAba(aba) {
     abaSelecionada = aba
     aba.btn.classList.add('seletor-btn-ativo')
     aba.aba.classList.add('aba-selecionada')
 }
-
 function desativarAba(aba) {
     aba.btn.classList.remove('seletor-btn-ativo')
     aba.aba.classList.remove('aba-selecionada')
 }
-
 function selecionarAba(aba) {
     desativarAba(abaSelecionada)
     ativarAba(aba)
@@ -43,6 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
+    //Criar funcionalidade para cada item na lista aba.
     abas.forEach(item => {
         item.btn.addEventListener('click', function() {
             selecionarAba(item)
