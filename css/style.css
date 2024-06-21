@@ -174,6 +174,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .integrantes {
@@ -197,4 +198,12 @@ footer {
     background-color: var(--azul-escuro);
     margin: 0px 4px 0px 4px;
     height: 20px;
+}
+
+.link-github {
+    margin-top: 20px;
+}
+
+.logo-github {
+    width: 40px;
 }
