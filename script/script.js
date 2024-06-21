@@ -32,7 +32,6 @@ function selecionarAba(aba) {
 //Selecionar uma aba por padrão para o código não quebrar
 ativarAba(abaCards)
 
-
 //Executar o código somente quando a página carregar
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('.card').forEach(card => {
